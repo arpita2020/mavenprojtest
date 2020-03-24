@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [google_test]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="googletest(failed)">
+    <classes>
+      <class name="Test.test">
+        <methods>
+          <include name="test_Home_Page_Appear_Correct"/>
+        </methods>
+      </class> <!-- Test.test -->
+    </classes>
+  </test> <!-- googletest(failed) -->
+</suite> <!-- Failed suite [google_test] -->
