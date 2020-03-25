@@ -17,7 +17,7 @@ public class test {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.google.com/");
-		driver.findElement(By.name("a")).sendKeys("news");
+		driver.findElement(By.name("q")).sendKeys("news");
 		//Find user name and fill user name
 	  
 		//Assert.assertTrue(homeText.toLowerCase().contains("guru99 bank"));
